@@ -33,12 +33,12 @@ public class Player : Photon.PunBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         photonView = GetComponent<PhotonView>();
+        gameObject.name = "Player: " + photonView.owner.NickName;
     }
 
     private void FixedUpdate()
     {
-        if (photonView.isMine)
-            CheckInput();
+        CheckInput();
     }
 
     //Update is called once per frame
@@ -93,7 +93,9 @@ public class Player : Photon.PunBehaviour
         }
 
         if (Input.GetKeyUp(KeyCode.Joystick1Button0) || Input.GetKeyUp(KeyCode.Mouse0))
+        {
             canShoot = true;
+        }
     }
 
     private void SmoothMove()

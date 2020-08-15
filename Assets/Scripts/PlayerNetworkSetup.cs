@@ -18,5 +18,15 @@ public class PlayerNetworkSetup : Photon.PunBehaviour
             PlayerCamera.enabled = true;
             playerScript.enabled = true;
         }
+        else
+        {
+            Rigidbody attachedRigidbody = GetComponent<Rigidbody>();
+            if (attachedRigidbody != null)
+            {
+                attachedRigidbody.isKinematic = true;
+            }
+            PlayerCamera.enabled = false;
+            playerScript.enabled = false;
+        }
     }
 }

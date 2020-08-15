@@ -55,6 +55,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -257,6 +258,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -336,6 +338,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -442,7 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d3bcf40a15a4d94bac9621f13ab3206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 5
   stainPrefab: {fileID: 677068772997915874, guid: 2ea37d564efb30142b8b9f574bb7808e,
     type: 3}
   spawnObject: {fileID: 7269686983737764476}
@@ -705,6 +708,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
+  m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -938,16 +942,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6209187368260957593}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 98b42cf4619b6a747aa7897787f5c073,
-        type: 3}
-      propertyPath: m_Name
-      value: v_pist_deagle
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 98b42cf4619b6a747aa7897787f5c073,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 98b42cf4619b6a747aa7897787f5c073,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1018,6 +1012,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.8735
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 98b42cf4619b6a747aa7897787f5c073,
+        type: 3}
+      propertyPath: m_Name
+      value: v_pist_deagle
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 98b42cf4619b6a747aa7897787f5c073,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98b42cf4619b6a747aa7897787f5c073, type: 3}
 --- !u!4 &1392109046659029785 stripped
@@ -1033,11 +1037,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6209187368260957593}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 524d5f95712fd4d45ae227d7a3828a7e,
-        type: 3}
-      propertyPath: m_Name
-      value: Mark23
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 524d5f95712fd4d45ae227d7a3828a7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1107,6 +1106,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 19.556173
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 524d5f95712fd4d45ae227d7a3828a7e,
+        type: 3}
+      propertyPath: m_Name
+      value: Mark23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 524d5f95712fd4d45ae227d7a3828a7e, type: 3}

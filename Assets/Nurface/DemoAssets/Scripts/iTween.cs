@@ -703,10 +703,10 @@ public class iTween : MonoBehaviour{
 		}
 		
 		//set tempColor and base fromColor:
-		if(target.GetComponent<GUITexture>()){
-			tempColor=fromColor=target.GetComponent<GUITexture>().color;	
-		}else if(target.GetComponent<GUIText>()){
-			tempColor=fromColor=target.GetComponent<GUIText>().material.color;
+		if(target.GetComponent<UnityEngine.UI.Text>()){
+			tempColor=fromColor=target.GetComponent<UnityEngine.UI.Text>().color;	
+		}else if(target.GetComponent<UnityEngine.UI.Text>()){
+			tempColor=fromColor=target.GetComponent<UnityEngine.UI.Text>().material.color;
 		}else if(target.GetComponent<SpriteRenderer>()){
 			tempColor=fromColor=target.GetComponent<SpriteRenderer>().color;
 		}else if(target.GetComponent<Renderer>()){
@@ -743,10 +743,10 @@ public class iTween : MonoBehaviour{
 		}
 		
 		//apply fromColor:
-		if(target.GetComponent<GUITexture>()){
-			target.GetComponent<GUITexture>().color=fromColor;	
-		}else if(target.GetComponent<GUIText>()){
-			target.GetComponent<GUIText>().material.color=fromColor;
+		if(target.GetComponent<UnityEngine.UI.Text>()){
+			target.GetComponent<UnityEngine.UI.Text>().color=fromColor;	
+		}else if(target.GetComponent<UnityEngine.UI.Text>()){
+			target.GetComponent<UnityEngine.UI.Text>().material.color=fromColor;
 		}else if(target.GetComponent<SpriteRenderer>()){
 			target.GetComponent<SpriteRenderer>().color=fromColor;
 		}else if(target.GetComponent<Renderer>()){
@@ -3334,12 +3334,12 @@ public class iTween : MonoBehaviour{
 		//colors = new Color[3];
 		
 		//from and init to values:
-		if(GetComponent<GUITexture>()){
+		if(GetComponent<UnityEngine.UI.Text>()){
 			colors = new Color[1,3];
-			colors[0,0] = colors[0,1] = GetComponent<GUITexture>().color;
-		}else if(GetComponent<GUIText>()){
+			colors[0,0] = colors[0,1] = GetComponent<UnityEngine.UI.Text>().color;
+		}else if(GetComponent<UnityEngine.UI.Text>()){
 			colors = new Color[1,3];
-			colors[0,0] = colors[0,1] = GetComponent<GUIText>().material.color;
+			colors[0,0] = colors[0,1] = GetComponent<UnityEngine.UI.Text>().material.color;
 		}else if(GetComponent<SpriteRenderer>()){
 			colors = new Color[1,3];
 			colors[0,0] = colors[0,1] = GetComponent<SpriteRenderer>().color;
@@ -4113,12 +4113,12 @@ public class iTween : MonoBehaviour{
 		*/
 		
 		//apply:
-		if(GetComponent<GUITexture>()){
+		if(GetComponent<UnityEngine.UI.Text>()){
 			//guiTexture.color=colors[2];
-			GetComponent<GUITexture>().color=colors[0,2];
-		}else if(GetComponent<GUIText>()){
+			GetComponent<UnityEngine.UI.Text>().color=colors[0,2];
+		}else if(GetComponent<UnityEngine.UI.Text>()){
 			//guiText.material.color=colors[2];
-			GetComponent<GUIText>().material.color=colors[0,2];
+			GetComponent<UnityEngine.UI.Text>().material.color=colors[0,2];
 		}else if(GetComponent<SpriteRenderer>()){
 			//guiText.material.color=colors[2];
 			GetComponent<SpriteRenderer>().color=colors[0,2];
@@ -4134,12 +4134,12 @@ public class iTween : MonoBehaviour{
 		
 		//dial in:
 		if(percentage==1){
-			if(GetComponent<GUITexture>()){
+			if(GetComponent<UnityEngine.UI.Text>()){
 				//guiTexture.color=colors[1];
-				GetComponent<GUITexture>().color=colors[0,1];
-			}else if(GetComponent<GUIText>()){
+				GetComponent<UnityEngine.UI.Text>().color=colors[0,1];
+			}else if(GetComponent<UnityEngine.UI.Text>()){
 				//guiText.material.color=colors[1];
-				GetComponent<GUIText>().material.color=colors[0,1];
+				GetComponent<UnityEngine.UI.Text>().material.color=colors[0,1];
 			}else if(GetComponent<SpriteRenderer>()){
 				//guiText.material.color=colors[1];
 				GetComponent<SpriteRenderer>().color=colors[0,1];
@@ -4865,10 +4865,10 @@ public class iTween : MonoBehaviour{
 		}
 		
 		//init values:
-		if(target.GetComponent<GUITexture>()){
-			colors[0] = colors[1] = target.GetComponent<GUITexture>().color;
-		}else if(target.GetComponent<GUIText>()){
-			colors[0] = colors[1] = target.GetComponent<GUIText>().material.color;
+		if(target.GetComponent<UnityEngine.UI.Text>()){
+			colors[0] = colors[1] = target.GetComponent<UnityEngine.UI.Text>().color;
+		}else if(target.GetComponent<UnityEngine.UI.Text>()){
+			colors[0] = colors[1] = target.GetComponent<UnityEngine.UI.Text>().material.color;
 		}else if(target.GetComponent<SpriteRenderer>()){
 			colors[0] = colors[1] = target.GetComponent<SpriteRenderer>().color;
 		}else if(target.GetComponent<Renderer>()){
@@ -4902,10 +4902,10 @@ public class iTween : MonoBehaviour{
 		colors[3].a=Mathf.SmoothDamp(colors[0].a,colors[1].a,ref colors[2].a,time);
 				
 		//apply:
-		if(target.GetComponent<GUITexture>()){
-			target.GetComponent<GUITexture>().color=colors[3];
-		}else if(target.GetComponent<GUIText>()){
-			target.GetComponent<GUIText>().material.color=colors[3];
+		if(target.GetComponent<UnityEngine.UI.Text>()){
+			target.GetComponent<UnityEngine.UI.Text>().color=colors[3];
+		}else if(target.GetComponent<UnityEngine.UI.Text>()){
+			target.GetComponent<UnityEngine.UI.Text>().material.color=colors[3];
 		}else if(target.GetComponent<SpriteRenderer>()){
 			target.GetComponent<SpriteRenderer>().color=colors[3];
 		}else if(target.GetComponent<Renderer>()){
@@ -6033,7 +6033,7 @@ public class iTween : MonoBehaviour{
 	/// </param>
 	public static void CameraFadeSwap(Texture2D texture){
 		if(cameraFade){
-			cameraFade.GetComponent<GUITexture>().texture=texture;
+			//cameraFade.GetComponent<UnityEngine.UI.Text>().mainTexture = texture;
 		}
 	}
 	
@@ -6056,9 +6056,9 @@ public class iTween : MonoBehaviour{
 			//establish colorFade object:
 			cameraFade = new GameObject("iTween Camera Fade");
 			cameraFade.transform.position= new Vector3(.5f,.5f,depth);
-			cameraFade.AddComponent<GUITexture>();
-			cameraFade.GetComponent<GUITexture>().texture=texture;
-			cameraFade.GetComponent<GUITexture>().color = new Color(.5f,.5f,.5f,0);
+			cameraFade.AddComponent<UnityEngine.UI.Text>();
+			//cameraFade.GetComponent<UnityEngine.UI.Text>().texture=texture;
+			cameraFade.GetComponent<UnityEngine.UI.Text>().color = new Color(.5f,.5f,.5f,0);
 			return cameraFade;
 		}
 	}
@@ -6079,9 +6079,9 @@ public class iTween : MonoBehaviour{
 			//establish colorFade object:
 			cameraFade = new GameObject("iTween Camera Fade");
 			cameraFade.transform.position= new Vector3(.5f,.5f,Defaults.cameraFadeDepth);
-			cameraFade.AddComponent<GUITexture>();
-			cameraFade.GetComponent<GUITexture>().texture=texture;
-			cameraFade.GetComponent<GUITexture>().color = new Color(.5f,.5f,.5f,0);
+			cameraFade.AddComponent<UnityEngine.UI.Text>();
+			//cameraFade.GetComponent<UnityEngine.UI.Text>().texture=texture;
+			cameraFade.GetComponent<UnityEngine.UI.Text>().color = new Color(.5f,.5f,.5f,0);
 			return cameraFade;
 		}
 	}
@@ -6099,9 +6099,9 @@ public class iTween : MonoBehaviour{
 			//establish colorFade object:
 			cameraFade = new GameObject("iTween Camera Fade");
 			cameraFade.transform.position= new Vector3(.5f,.5f,Defaults.cameraFadeDepth);
-			cameraFade.AddComponent<GUITexture>();
-			cameraFade.GetComponent<GUITexture>().texture=CameraTexture(Color.black);
-			cameraFade.GetComponent<GUITexture>().color = new Color(.5f,.5f,.5f,0);
+			cameraFade.AddComponent<UnityEngine.UI.Text>();
+			//cameraFade.GetComponent<UnityEngine.UI.Text>().texture=CameraTexture(Color.black);
+			cameraFade.GetComponent<UnityEngine.UI.Text>().color = new Color(.5f,.5f,.5f,0);
 			return cameraFade;
 		}
 	}	
