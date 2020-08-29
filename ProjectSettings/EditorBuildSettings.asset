@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 7e2dd6fa2b6cc27468c9d040ca2d6228
   - enabled: 1
+    path: Assets/Scenes/PaintBallArenaDemo.unity
+    guid: 12fbed79a73fc7e4590b4e601149bcab
+  - enabled: 1
     path: Assets/Scenes/Playground.unity
     guid: 9fd004c90f3d2e64a9208cc54dd504ab
   m_configObjects: {}

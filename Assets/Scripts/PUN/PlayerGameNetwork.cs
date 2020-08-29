@@ -28,7 +28,7 @@ public class PlayerGameNetwork : PunBehaviour
 
     private void OnSceneFinishedLoading(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "Playground")
+        if (scene.name == "PaintBallArenaDemo")
         {
             if (PhotonNetwork.isMasterClient)
                 MasterLoadedGame();
@@ -73,7 +73,7 @@ public class PlayerGameNetwork : PunBehaviour
     [PunRPC]
     private void RPC_CreatePlayer()
     {
-        GameObject obj = PhotonNetwork.Instantiate("Player1", new Vector3(0,7, Random.Range(-10, 10)), Quaternion.identity, 0);
+        GameObject obj = PhotonNetwork.Instantiate("Player1", new Vector3(-3,7, Random.Range(1, 40)), Quaternion.identity, 0);
     }
 
     private IEnumerator C_SetPing()
