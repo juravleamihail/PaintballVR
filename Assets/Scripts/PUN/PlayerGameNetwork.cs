@@ -73,7 +73,7 @@ public class PlayerGameNetwork : PunBehaviour
     [PunRPC]
     private void RPC_CreatePlayer()
     {
-        GameObject obj = PhotonNetwork.Instantiate("Player1", new Vector3(-3,7, Random.Range(1, 40)), Quaternion.identity, 0);
+        GameObject obj = PhotonNetwork.Instantiate("Player", new Vector3(-3,7, Random.Range(1, 40)), Quaternion.identity, 0);
     }
 
     private IEnumerator C_SetPing()
