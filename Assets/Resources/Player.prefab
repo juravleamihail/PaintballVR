@@ -31,6 +31,37 @@ Transform:
   m_Father: {fileID: 2198630991321495703}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &213237763570140537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 702071370757726147}
+  m_Layer: 0
+  m_Name: paintball gun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &702071370757726147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213237763570140537}
+  m_LocalRotation: {x: 0, y: -0.6401096, z: 0, w: 0.76828367}
+  m_LocalPosition: {x: 0.104, y: 1.429, z: 0.133}
+  m_LocalScale: {x: 66.199, y: 66.199, z: 66.199}
+  m_Children:
+  - {fileID: 5451896418650952762}
+  m_Father: {fileID: 7863358156375851297}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -79.6, z: 0}
 --- !u!1 &268004722553837767
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,7 +1148,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &386167579160712614
 Transform:
   m_ObjectHideFlags: 0
@@ -2076,6 +2107,88 @@ Transform:
   m_Father: {fileID: 6021050061483254581}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3651025073866085805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3864668908296515100}
+  - component: {fileID: 5224237537134993273}
+  - component: {fileID: 9130440417079507504}
+  m_Layer: 0
+  m_Name: position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3864668908296515100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3651025073866085805}
+  m_LocalRotation: {x: -1.7763568e-15, y: 0, z: -1.7763568e-15, w: 1}
+  m_LocalPosition: {x: -0.006658169, y: -0.013418362, z: -0.0032011312}
+  m_LocalScale: {x: 0.99999994, y: 1, z: 0.99999994}
+  m_Children: []
+  m_Father: {fileID: 5451896418650952762}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5224237537134993273
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3651025073866085805}
+  m_Mesh: {fileID: -1647775201140530982, guid: fb54dfcfb4e3e034ba5614ee71abc9da, type: 3}
+--- !u!23 &9130440417079507504
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3651025073866085805}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 5607805580804120765, guid: fb54dfcfb4e3e034ba5614ee71abc9da, type: 3}
+  - {fileID: -1251457731659751925, guid: fb54dfcfb4e3e034ba5614ee71abc9da, type: 3}
+  - {fileID: 3627763037591626431, guid: fb54dfcfb4e3e034ba5614ee71abc9da, type: 3}
+  - {fileID: -4099090524529705888, guid: fb54dfcfb4e3e034ba5614ee71abc9da, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &3652557628819207485
 GameObject:
   m_ObjectHideFlags: 0
@@ -2874,6 +2987,7 @@ Transform:
   - {fileID: 1662721810070487256}
   - {fileID: 386167579160712614}
   - {fileID: 2431068814951215007}
+  - {fileID: 702071370757726147}
   m_Father: {fileID: 2987607879906067924}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3150,6 +3264,37 @@ Transform:
   m_Father: {fileID: 3309599273247427827}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8702553349870026432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5451896418650952762}
+  m_Layer: 0
+  m_Name: rotation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5451896418650952762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8702553349870026432}
+  m_LocalRotation: {x: -3.9446142e-17, y: 0.95158625, z: 3.9446142e-17, w: -0.30738187}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000001, y: 1, z: 1.0000001}
+  m_Children:
+  - {fileID: 3864668908296515100}
+  m_Father: {fileID: 702071370757726147}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8728246146500810627
 GameObject:
   m_ObjectHideFlags: 0
@@ -3343,7 +3488,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9119196104559866041}
   m_LocalRotation: {x: 0.015437931, y: -0.03140698, z: 0.00048515605, w: 0.9993873}
-  m_LocalPosition: {x: 0.109, y: 1.5194, z: 0.2078}
+  m_LocalPosition: {x: 0.0954, y: 1.4577, z: 0.36}
   m_LocalScale: {x: 0.027693044, y: 0.02769305, z: 0.027693046}
   m_Children: []
   m_Father: {fileID: 7863358156375851297}
