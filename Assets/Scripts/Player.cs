@@ -34,6 +34,11 @@ public class Player : Photon.PunBehaviour
         audioSource = GetComponent<AudioSource>();
         photonView = GetComponent<PhotonView>();
         gameObject.name = "Player: " + photonView.owner.NickName;
+
+        if (!photonView.isMine)
+        {
+            Destroy(GetComponent<Player>());
+        }
     }
 
     private void FixedUpdate()
